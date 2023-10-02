@@ -12445,12 +12445,12 @@ body * { -webkit-font-smoothing: antialiased; letter-spacing: calc(0.6px - 0.05e
       // Redirect to visa.com
       _ps("embedded-ln3ir72rl:send", "agreed", {
         // The event_callback function will be invoked once the "send" is complete.
-        window.location.href = 'https://www.visa.com';
         event_callback: function (err, eventType, clickwrapGroup, payload) {
           if (err) {
             // The send encountered an error. 
             console.log(err);
           } else{
+            window.location.href = 'https://www.visa.com';
 
           }
           
